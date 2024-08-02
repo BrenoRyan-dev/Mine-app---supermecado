@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lista de supermercado!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Lista de supermercado!</h2>
+      <h4>
+        Intuito desse site e soma tudo que você coloca sobre seu carrinho de
+        compras!
+      </h4>
+    </header>
+    <div class="lista-cadastro">
+      <input
+        class="input-form"
+        type="text"
+        placeholder="Nome do produto:"
+        name="nome-prduto"
+      />
+      <input
+        class="input-form"
+        type="number"
+        placeholder="Valor do produto"
+        name="price"
+        step="0.01"
+      />
+      <input
+        class="AdicionarProduto"
+        type="submit"
+        name="acao"
+        value="Adicionar"
+      />
+    </div>
+    <div class="lista-produto"></div>
+
+    <div class="soma-produto">
+      <h1>Total: R$ 0</h1>
+    </div>
+
+    <button class="limpar" name="limpar">Limpar</button>
+    <script src="script.js"></script>
+  </body>
+</html>
